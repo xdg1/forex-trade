@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free-solid": "^5.0.13",
@@ -22,6 +23,7 @@
     "@vitejs/plugin-vue": "^5.2.1",
     "autoprefixer": "^10.4.21",
     "daisyui": "^5.0.9",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.0.15",
     "vite": "^6.2.0"

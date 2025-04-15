@@ -22,8 +22,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
-  routes,
-});
-
+    history: createWebHistory('/forex-trade/'),  // Here is the fix
+    routes,
+  });
 export default router;
