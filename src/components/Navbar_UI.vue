@@ -52,9 +52,6 @@
         </template>
         <template v-else>
           <router-link to="/" class="mobilelink btn btn-ghost text-l w-full text-left mt-8" @click="toggleMenu">Főoldal</router-link>
-          <router-link to="/" class="mobilelink btn btn-ghost text-l w-full text-left" @click="toggleMenu">Rólunk</router-link>
-          <router-link to="/" class="mobilelink btn btn-ghost text-l w-full text-left" @click="toggleMenu">Munkatársaink</router-link>
-          <router-link to="/" class="mobilelink btn btn-ghost text-l w-full text-left" @click="toggleMenu">Kapcsolat</router-link>
         </template>
         <p class="slide-copy copyright absolute bottom-4 left-4 text-sm text-gray-500">
           © 2025 Trade. Minden jog fenntartva.

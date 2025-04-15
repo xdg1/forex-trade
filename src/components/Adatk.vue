@@ -3,7 +3,7 @@
     <div class="docx-page container mx-auto py-8">
         <Navbar2/>
         <br><br>
-      <h1>Adatkezelési Szabályzat a Signal Csoporthoz</h1>
+      <span>Adatkezelési Szabályzat a Signal Csoporthoz</span>
       <p><span>1. Bevezetés:</span> Jelen adatkezelési szabályzat (a továbbiakban: Szabályzat) meghatározza az általam működtetett Signal csoportban (a továbbiakban: Csoport) folyó adatkezelési gyakorlatokat.</p>
     <p><span>2. Az adatkezelés célja:</span> A Csoport tagjainak adatait kizárólag az alábbi célokra használom fel:</p>
     <ul><li>    •	Kereskedelmi információk, forex jelek megosztása,</li>
