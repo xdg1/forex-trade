@@ -1,0 +1,511 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@media screen and (max-width: 768px) {
+    .swiper-button-next, .swiper-button-prev {
+        display: none !important; /* Hide the buttons on mobile */
+    }
+
+    .footer p {
+       margin-left: 22% !important;
+       text-align: center !important;
+    }
+
+    .navlink {
+        display: none;
+    }
+
+    .bot-a {
+        width: 70% !important;
+        height: 7vh !important;
+        margin: 0 auto !important;
+        display: block; 
+        text-align: center;
+    }
+
+    .bot {
+        width: 100% !important;
+        height: 7vh !important;
+        margin: 0 auto !important;
+        display: block; 
+        text-align: center; 
+    }
+
+    .rolunk {
+        display: flex; /* Enable flexbox */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        flex-direction: column; /* Stack children vertically */
+        padding: 0; /* Remove any default padding */
+        margin: 0; 
+        width: 100% !important;/* Remove any default margin */
+        text-align: center; /* Center-align text */
+        box-sizing: border-box; /* Include padding in width calculations */
+    }
+    
+    .rolunk-content {
+        width: 100%; /* Ensure it takes the full width */
+        max-width: 800px; /* Optional: Limit the width for better readability */
+        margin: 0 auto; /* Center horizontally */
+        text-align: center; /* Center-align text inside */
+       /* Add padding to prevent content from touching edges */
+        box-sizing: border-box; /* Include padding in width calculations */
+    }
+    
+  
+    .overlay {
+        position: absolute;
+        inset: 0; /* Covers the entire figure */
+        display: flex; /* Enable flexbox */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        pointer-events: none; /* Ensure the overlay doesn't block interactions */
+        padding: 0; /* Remove any extra padding */
+    }
+    
+    /* Center the .szoveg-kep element */
+    .szoveg-kep {
+        background-color: hwb(0 11% 88% / 0.5) !important; /* Light gray with transparency */
+        padding: 1rem; /* Add padding for spacing inside the element */
+        border-radius: 8px; /* Optional: Add rounded corners */
+        text-align: center; /* Center-align text inside */
+        width: 70% !important; /* Adjust width dynamically based on content */
+        margin: 0; /* Remove any extra margins */
+    }
+
+    .text-content p, h2 {
+        color: white !important;
+        justify-content: center;
+    }
+
+    .kep {
+        width: 80% !important;
+    }
+}
+
+
+.bot {
+    width: 100%;
+    height: 6vh !important;
+    background-color: #249bce !important; /* Primary color */
+    color: white !important; 
+}
+
+
+figure {
+    position: relative; /* Positioning context for the text overlay */
+    margin: 0; /* Remove default margin */
+}
+
+.munkatarsaink {
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack children vertically */
+    width: 100%; /* Ensure it takes the full width */
+    text-align: center; /* Center-align text */
+    padding: 2vh 0; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in width calculations */
+}
+
+.munkatarsaink h1 {
+    position: relative; /* Ensure the pseudo-element is positioned relative to the h1 */
+    display: inline-block; /* Ensure the h1 width is only as wide as its content */
+    z-index: 1; /* Ensure the text is above the background */
+    text-align: center; /* Center-align the text */
+    margin: 0 auto; /* Center the h1 horizontally */
+    font-size: 2.5rem; /* Adjust font size */
+    color: black; /* Ensure text color is visible */
+}
+
+.munkatarsaink h1::before {
+    content: ''; /* Add an empty content for the pseudo-element */
+    position: absolute; /* Position it relative to the h1 */
+    top: 83%; /* Vertically center it */
+    transform: translateY(-50%) skew(-20deg); /* Center and skew the background */
+    left: 0; /* Start from the left */
+    width: 100%; /* Match the width of the h1 */
+    height: 10px; /* Adjust the height of the background line */
+    background-color: #249bce; /* Set the background color */
+    z-index: -1; /* Place it behind the h1 text */
+}
+.rolunk {
+    padding-bottom: 5vh !important;
+    width: 70%;
+    align-items: center !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+}
+
+.rolunk h1 {
+    color: black;
+    align-self: center;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.bot:hover {
+    background-color: #005bb5 !important; /* Darker shade on hover */
+}
+
+
+.rolunk p {
+    font-size: 1.3rem;
+}
+
+.swiper-button-prev {
+    color: #249bce !important; /* Set the desired color for the previous button */
+}
+
+.swiper-button-next{
+    color: #249bce !important; /* Set the desired color for the next button */
+    font-size: 1.5rem; /* Optional: Adjust the size */
+  }
+
+.bot-a {
+    width: 33% !important;
+    height: 6vh !important;
+    align-items: center !important;
+    justify-content: center !important; 
+    margin-right: 5%;/* Horizontally center the content */
+}
+
+.bot-a img {
+    margin-left: 2vh;
+    display: inline-block; /* Ensure the image respects alignment */
+    width: 1.5rem; /* Adjust the size of the image */
+    height: 1.5rem;
+    margin-right: 2vh ; /* Maintain aspect ratio */
+}
+
+.bot-a span {
+    display: inline-block; /* Ensure the text respects alignment */
+    line-height: 1; /* Prevent extra spacing around the text */
+    vertical-align: middle;
+    font-size:large; /* Align text vertically with the image */
+}
+
+@media screen and (max-width: 768px) {
+    .bot-a {
+        display: flex; /* Enable flexbox */
+        flex-direction: row; /* Ensure the image and text are in a row */
+        align-items: center; /* Vertically center the content */
+        justify-content: center; /* Horizontally center the content */
+        width: 75% !important; /* Adjust width dynamically */
+        height: 6vh !important; /* Set button height */
+        text-align: center; /* Center-align text inside */
+        gap: 0.5rem; /* Add spacing between the image and text */
+        padding: 0 1rem; /* Add padding inside the button */
+        box-sizing: border-box; /* Include padding in width calculations */
+    }
+
+    .bot-a img {
+        display: inline-block; /* Ensure the image respects alignment */
+        width: 1.5rem; /* Adjust the size of the image */
+        height: 1.5rem;
+        margin-left: 0 !important;/* Maintain aspect ratio */
+    }
+    
+    .bot-a span {
+        display: inline-block; /* Ensure the text respects alignment */
+        line-height: 1; /* Prevent extra spacing around the text */
+        vertical-align: middle;
+        font-size:large; /* Align text vertically with the image */
+    }
+
+    .fooldal {
+        min-height: 80vh !important; /* Ensure the section takes up the full viewport height */
+        padding: 0; /* Remove any default padding */
+        margin: 0; /* Remove any default margin */
+        text-align: center; /* Center-align text */
+        box-sizing: border-box; /* Include padding in width calculations */
+    }
+
+    .bal {
+        margin-top: 15% !important;
+    }
+    .jobb {
+        margin-bottom: 10% !important;
+    }
+}
+
+.kapcsolat h1{
+    font-size: 4.5vh !important;
+}
+
+  .fooldal {
+    min-height: 75vh !important;
+  }
+  
+  /* Style the previous button */
+  .swiper-button-prev {
+    color: #007aff; /* Set the desired color for the previous button */
+    font-size: 1.5rem; /* Optional: Adjust the size */
+  }
+  
+  /* Style the image */
+  .kep-container {
+    width: 100%; /* Adjust the width of the container */
+    margin: 0 auto; /* Center the container itself */ /* Add the border to the container */
+    padding-bottom: 1rem;
+    text-align: center; /* Center the image horizontally */
+}
+
+.kep {
+    width: 45%; /* Adjust the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    display: inline-block; /* Ensure the image respects text alignment */
+}
+  
+  /* Overlay container */
+  .overlay {
+    position: absolute;
+    inset: 0; /* Covers the entire figure */
+    display: flex;
+    justify-content: end; /* Aligns text to the right */
+    align-items:end;
+    pointer-events: none;
+ 
+    padding-bottom: 5vh; /* Ensures the overlay doesn't block interactions */
+  }
+  
+  /* Text content inside the overlay */
+  .text-content {
+    background-color: transparent; /* Semi-transparent black background */
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px; /* Optional: Add rounded corners */
+    margin-right: 3rem !important;
+  }
+
+
+
+.text-content p, h2 {
+    color: black;
+    justify-content: center;
+}
+
+.text-content-r {
+    width: 100%; /* Ensure it takes the full width */
+    margin: 0 auto; /* Center horizontally */
+    text-align: center; /* Center-align text inside */
+    padding: 2rem; /* Add padding for spacing */
+    box-sizing: border-box; 
+    background-color: transparent;
+    color: black;
+}
+
+.kapcsolat {
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack children vertically */
+    min-height: 40vh; /* Ensure the section takes up the full viewport height */
+    padding: 0; /* Remove any default padding */
+    margin: 0; 
+    width: 100% !important;/* Remove any default margin */
+    text-align: center; /* Center-align text */
+    box-sizing: border-box;
+    margin-bottom: 2vh !important; /* Include padding in width calculations */
+}
+
+.footer p {
+    margin-left: 2vh;
+}
+
+.kapcsolat h2 {
+    color: black !important ;
+}
+
+.info-cell {
+    margin-right: 4vh !important;
+    margin-left: 4vh !important;
+}
+
+.kapcsolat-content {
+    width: 100%; /* Ensure it takes the full width */
+    max-width: 800px; /* Optional: Limit the width for better readability */
+    margin: 0 auto; /* Center horizontally */
+    text-align: center; /* Center-align text inside */
+   /* Add padding to prevent content from touching edges */
+    box-sizing: border-box; /* Include padding in width calculations */
+}
+
+
+
+.map-container {
+    width: 80%;
+    /* Adjust the width of the container */
+    margin: 0 auto;
+    background-color: #249bce !important;
+    border: 15px solid #249bce !important;
+    border-radius: 15px; /* Add the border to the container */
+}
+
+.footer {
+    background-color: #249bce !important;
+}
+
+.ikon {
+    color: black !important;
+    width: 50px !important;
+    height: 50px !important;
+    margin-bottom: 2vh !important;
+    color: #249bce !important;
+}
+
+.szoveg-kep {
+    background: linear-gradient(to bottom, #249bce 0%, #249bce 70%);
+    padding: 1rem;
+    border-radius: 0.25rem;
+    color: white !important;
+    text-align: center;
+    position: relative; /* Add this */
+    transform: skew(-20deg) !important;
+    transform-origin: top left !important;
+    width: 30%; /* Adjust width dynamically based on content */
+  }
+  
+  .szoveg-kep::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -20px; /* Adjust this value to control the height of the trapezoid */
+    height: 0;
+    width: 100%;
+    background: rgba(36, 155, 206, 0.8);
+   /* Adjust 20% and 80% to control the slope */
+  }
+
+.text-content p, h2 {
+    color: white !important;
+    justify-content: center;
+}
+
+.tg-logo {
+    width: 50px !important;
+    height: 50px !important;
+    margin-bottom: 2vh !important;
+    color: #249bce !important;
+}
+
+.jobb {
+    background-image: url('/tg.png') !important;
+}
+
+.navbar {
+    background-color: #249bce !important;
+    color: white !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+@media screen and (min-width: 768px) {
+    .menu-mob {
+        display: none !important; 
+    }
+}
+
+.mobilelink {
+    color: white !important;
+}
+
+
+
+.telomenu {
+    background-color: #249bce !important;
+}
+
+.slide-copy {
+    color: white !important;
+    font-size: 0.8rem !important;
+}
+
+h1 {
+    position: relative; /* Ensure the pseudo-element is positioned relative to the h1 */
+    display: inline-block; /* Ensure the h1 width is only as wide as its content */
+    z-index: 1; /* Ensure the text is above the background */
+    text-align: center !important; /* Center-align the text */
+}
+
+h1::before {
+    content: ''; /* Add an empty content for the pseudo-element */
+    position: absolute; /* Position it relative to the h1 */
+    top: 83%; /* Vertically center it */
+    transform: translateY(-50%) skew(-20deg); /* Center and skew the background */
+    left: 0; /* Start from the left */
+    width: 100%; /* Match the width of the h1 */
+    height: 10px; /* Adjust the height of the background line */
+    background-color: #249bce; /* Set the background color */
+    z-index: -1; /* Place it behind the h1 text */
+}
+
+.oldal {
+    font-size:xx-large !important;
+}
+
+.rolunk_szoveg {
+    margin-bottom: 10rem !important;
+}
+
+.rolunk_ikon {
+    color: white !important;
+    background-color: #249bce !important;
+    padding: 3vh !important;
+    border: #249bce 5PX SOLID;
+    border-radius: 2VH !important;
+    font-size: 3REM !important;
+}
+
+.iksz {
+    color: white !important;
+}
+
+.bemutatkozas {
+    margin-left: 2vh !important;
+    width: 70% !important;
+    transform: skew(-10deg) !important;
+    transform-origin: bottom right !important;
+    height: auto !important;
+    margin-bottom: 2vh !important;
+}
+
+.kartya {
+    width: auto !important;
+}
+
+.figura {
+    width: 100vh !important;
+}
+
+@media screen and (max-width: 768px) {
+    .figura {
+        width: auto !important;
+        margin-left: 3vh !important;
+    }
+
+    .bemutatkozas {
+        transform: skew(0) !important;
+        border-radius: 5% !important;
+        margin-right: 2vh !important;
+        font-weight: 450 !important;
+    }
+
+    .szoveg-kep {
+        width: auto !important;
+    }
+}
+
+.docx-page h1{
+    font-weight: bold !important;
+    
+}
+
+.docx-page span {
+    font-weight: bold !important;
+}
+
+.linkek {
+    margin-left: 2vh !important;
+}
